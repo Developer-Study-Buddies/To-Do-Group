@@ -15,16 +15,5 @@
 
 export default {
     name:'Navbar',
-    setup() {
-        function toggleSidebar(){
-            // const sidebar = document.querySelector('sidebar');
-            // sidebar.classList.toggle('sidebar-active')
-            console.log('You clicked on sidebar');
-        }
-
-        return {
-            toggleSidebar,
-        }
-    }
 }
 </script>
