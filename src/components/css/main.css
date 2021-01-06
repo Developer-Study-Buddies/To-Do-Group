@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+header {
+  height: 4.125rem;
+  width: 100vw;
+  left: -414px;
+  top: -225px;
+  background: #E4B063 65%;
+  -webkit-box-shadow: 0px 2px 4px 0px #0000 25%;
+          box-shadow: 0px 2px 4px 0px #0000 25%;
+}
+
+header .logo {
+  position: absolute;
+  width: 254px;
+  height: 80px;
+  padding: 0.5rem;
+  font-family: Lobster;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 80px;
+  /* identical to box height */
+  margin-left: 10rem;
+  top: 0;
+  left: 0;
+  color: #0000;
+  -webkit-transform: translateX(-224) translateY(-177);
+          transform: translateX(-224) translateY(-177);
+}
+
+header .logo svg {
+  position: relative;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  top: 0.5rem;
+  pointer-events: none;
+  -webkit-box-shadow: 0px 5px 4px 0px #0000 50%;
+          box-shadow: 0px 5px 4px 0px #0000 50%;
+}
+
+header .toggle-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.1rem;
+  background: transparent;
+}
+
+header .toggle-sidebar--btn {
+  margin-top: 3.5rem;
+  margin-left: 3rem;
+}
+
+.add-todo {
+  margin-left: 10rem;
+  margin-top: 2rem;
+  width: 518px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add-todo--input {
+  width: 403px;
+  height: 54px;
+  border: none;
+  outline: none;
+  background: #e9f3f2;
+  -webkit-box-shadow: 0px 4px 4px #0000 0.25;
+          box-shadow: 0px 4px 4px #0000 0.25;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+
+.add-todo--btn {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #e9f3f2;
+  background-color: #E4B063;
+  width: 87px;
+  height: 54px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.add-todo--btn:hover {
+  color: #E4B063;
+  background: #e9f3f2;
+}
+
+.add-todo--btn:active {
+  border-radius: 30px;
+  border: solid #E4B063;
+}
+
+.todo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.todo-list .todo-item {
+  margin-left: 10rem;
+  width: 518px;
+  height: 71px;
+  margin-top: 1rem;
+  background: #E9E9E9;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.todo-list .todo-item--complete {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 1rem 1rem;
+}
+
+.todo-list .todo-item--title {
+  font-size: 1.875rem;
+}
+/*# sourceMappingURL=main.css.map */
