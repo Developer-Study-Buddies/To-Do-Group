@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="toggle_sidebar">
-            <button @click="toggleSidebar" class="toggle-sidebar--btn">Toggle</button>
+            <button class="toggle-sidebar-btn">Toggle</button>
         </div>
         <div class="logo">
             <svg width="151" height="46" viewBox="0 0 151 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +12,6 @@
 </template>
 
 <script>
-
 export default {
     name:'Navbar',
 }

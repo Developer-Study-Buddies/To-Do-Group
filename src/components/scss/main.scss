@@ -9,6 +9,7 @@ header{
     box-shadow: 0px 2px 4px 0px $black 25%;
     
     .logo{
+        z-index: 1;
         position: absolute;
         width: 254px;
         height: 80px;
@@ -39,10 +40,10 @@ header{
         align-items: center;
         justify-content:center;
         padding: 0.1rem;
-        background: transparent;
+        z-index: 1;
 
-        &--btn{
-            margin-top: 3.5rem;
+        &-btn{
+            margin-top: 3rem;
             margin-left: 3rem;
         }
     }
@@ -99,18 +100,17 @@ header{
 }
 
 
-
 .todo-list{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    
     .todo-item{
         margin-left: 10rem;
         width: 518px;
         height: 71px;
         margin-top: 1rem;
-
+        
         background: #E9E9E9;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
@@ -125,11 +125,165 @@ header{
             border: none;
             outline: none;
             margin: 1rem 1rem;
-
+            
         }
-    
+        
         &--title{
             font-size:1.875rem;
         }
+    }
+}
+
+.app{
+    display: flex;
+}
+
+.filler{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    // align-items:center;
+    img {
+        z-index: -1;
+    }
+}
+
+.main{ // form+todos+filler
+    // position: absolute;
+    flex: 0.8;
+}
+
+.sidebar{
+    transition: opacity 2s ease-out;
+    height: 100vh;
+    flex: 0.2;
+    background: $grey;
+    align-items: center;
+    z-index: 0;
+    
+    &-item{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        .projects{
+            background: transparent;
+            flex: 0.6;
+            margin-top: 1rem;
+
+            .project-default {
+                margin: 0.5rem 0.5rem;
+                display: flex;
+                align-items: center;
+                
+                &-icon {
+                    padding: 0.1rem;
+                    border: none;
+                    outline: none;
+                    font-size: 1.5rem;
+                    pointer-events: none;
+                    text-shadow: 1px 1px 4px $black;
+                }
+                
+                &-name{
+                    pointer-events: none;
+                    margin-left: 0.5rem;
+                    font-size: 2rem;
+                }
+            }
+            
+            .project {
+                margin: 1rem 1rem;
+                background: transparent;
+                display: flex;
+                align-items: center;
+                
+                &-color{
+                    padding: 0.1rem;
+                    pointer-events: none;
+                }
+                
+                &-name{
+                    position: relative;
+                    float: left;
+                    pointer-events: none;
+                    margin-left: 0.5rem;
+                    font-size: 2rem;
+                }
+                
+            }
+            
+        }
+        .sub_projects {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: left;
+            margin-left: 2rem;
+            
+            .sub_project{
+                // flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                
+                &-color{
+                    padding: 0.1rem;
+                    pointer-events: none;
+                }
+                
+                &-name{
+                    pointer-events: none;
+                    margin-left: 0.5rem;
+                    font-size: 1.5rem;
+                }
+                
+            }
+        }
+        .settings{
+            flex: 0.4;
+            margin: 1rem 1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            
+            &-icon{
+                padding: 0.1rem;
+                pointer-events: none;
+                font-size: 1.5rem;
+                text-shadow: 1px 1px 4px $black;
+            }
+
+            &-name{
+                pointer-events: none;
+                margin-left: 0.5rem;
+                font-size: 2rem;
+            }
+
+        }
+
+    }
+}
+
+// project colors
+
+#color-icon {
+    &-1{
+        @include make_color_bullet($red);
+    }
+    &-2{
+        @include make_color_bullet($primary-color);
+    }
+    &-3{
+        @include make_color_bullet($secondary-color);
+    }
+    &-4{
+        @include make_color_bullet(darkblue);
     }
 }

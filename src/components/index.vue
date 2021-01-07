@@ -5,6 +5,9 @@
       <button type="submit" class="add-todo--btn">add</button>
     </form>
   </main>
+  <div class="filler">
+    <img src="../assets/filler_photo.svg" alt="">
+  </div>
 </template>
 <script>
 
