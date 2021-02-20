@@ -25,4 +25,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Run HTTP server
 
-* `npm run start`
+* `npm start`
